@@ -7,21 +7,21 @@
     <style>
         body {
             font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f7fdf9;
+            background: #2D2A2E; /* mocha dark */
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            color: #222;
+            color: #EDE7E3; /* cream text */
         }
         .form-container {
-            background: #fff;
-            color: #222;
+            background: #3A3539; /* lighter mocha */
+            color: #EDE7E3;
             padding: 32px 40px;
             border-radius: 18px;
-            box-shadow: 0 4px 24px rgba(67,233,123,0.10);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
             width: 370px;
             animation: fadeIn 0.6s ease-in-out;
         }
@@ -29,7 +29,7 @@
             text-align: center;
             margin-bottom: 24px;
             font-size: 2rem;
-            color: #219150;
+            color: #D9CAB3; /* soft cream */
             font-weight: 700;
             letter-spacing: 1px;
         }
@@ -38,40 +38,42 @@
             display: block;
             margin-top: 16px;
             margin-bottom: 6px;
-            color: #219150;
+            color: #C77D57; /* caramel accent */
         }
         input[type="text"], input[type="email"] {
             width: 100%;
             padding: 12px;
-            border: 1px solid #43e97b;
+            border: 1px solid #76B5A8; /* muted teal */
             border-radius: 8px;
             outline: none;
-            background: linear-gradient(90deg, #f7fdf9 0%, #f2fbf6 100%);
-            box-shadow: 0 2px 8px rgba(67,233,123,0.06);
+            background: #2D2A2E;
+            color: #EDE7E3;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.25);
             transition: border 0.2s, box-shadow 0.2s;
             font-size: 15px;
         }
         input[type="text"]:focus, input[type="email"]:focus {
-            border: 1.5px solid #219150;
-            box-shadow: 0 0 8px #43e97b;
+            border: 1.5px solid #C77D57;
+            box-shadow: 0 0 8px #76B5A8;
         }
         input[type="submit"] {
             margin-top: 28px;
             width: 100%;
             padding: 13px;
-            background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
-            color: #fff;
+            background: linear-gradient(90deg, #76B5A8 0%, #D9CAB3 100%);
+            color: #2D2A2E;
             font-size: 1.1rem;
             font-weight: 700;
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            box-shadow: 0 2px 8px rgba(67,233,123,0.10);
-            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+            transition: background 0.2s, box-shadow 0.2s, color 0.2s;
         }
         input[type="submit"]:hover {
-            background: #219150;
-            box-shadow: 0 4px 16px rgba(67,233,123,0.18);
+            background: #C77D57;
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.35);
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }

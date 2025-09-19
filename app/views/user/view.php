@@ -7,10 +7,10 @@
     <style>
         body {
             font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f7fdf9;
+            background: #2D2A2E; /* mocha dark */
             margin: 0;
             padding: 0;
-            color: #222;
+            color: #EDE7E3; /* soft cream text */
         }
         .top-bar {
             width: 90%;
@@ -20,8 +20,8 @@
             align-items: center;
         }
         .create-btn {
-            background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
-            color: #fff;
+            background: linear-gradient(90deg, #C77D57 0%, #D9CAB3 100%);
+            color: #2D2A2E;
             padding: 10px 24px;
             border-radius: 8px;
             font-weight: 600;
@@ -29,26 +29,27 @@
             border: none;
             cursor: pointer;
             text-decoration: none;
-            box-shadow: 0 2px 8px rgba(67,233,123,0.08);
-            transition: background 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+            transition: background 0.2s, color 0.2s;
         }
         .create-btn:hover {
-            background: #219150;
+            background: #76B5A8;
+            color: #fff;
         }
         h1 {
             text-align: center;
             margin: 40px 0 32px 0;
             font-size: 2.2rem;
             font-weight: 700;
-            color: #219150;
+            color: #D9CAB3;
             letter-spacing: 1px;
         }
         .table-container {
             width: 95%;
             margin: 0 auto;
-            background: #fff;
+            background: #3A3539;
             border-radius: 20px;
-            box-shadow: 0 4px 24px rgba(67,233,123,0.10);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
             padding: 32px 0 24px 0;
             animation: fadeIn 0.6s ease-in-out;
         }
@@ -57,34 +58,34 @@
             margin: 0 auto;
             border-collapse: separate;
             border-spacing: 0;
-            background: #fff;
-            color: #222;
+            background: #2D2A2E;
+            color: #EDE7E3;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(67,233,123,0.06);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.25);
         }
         th, td {
             padding: 18px 24px;
             text-align: left;
         }
         th {
-            background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+            background: linear-gradient(90deg, #C77D57 0%, #76B5A8 100%);
             color: #fff;
             font-size: 1.1rem;
             font-weight: 600;
-            border-bottom: 2px solid #43e97b;
+            border-bottom: 2px solid #C77D57;
         }
         tr {
             transition: background 0.2s;
         }
         tr:nth-child(even) {
-            background: #f7fdf9;
+            background: #3A3539;
         }
         tr:nth-child(odd) {
-            background: #f2fbf6;
+            background: #443F45;
         }
         tr:hover {
-            background: #e6faee;
+            background: #514A51;
         }
         .action-btn {
             text-decoration: none;
@@ -94,23 +95,24 @@
             font-size: 1rem;
             margin-right: 8px;
             transition: background 0.2s, box-shadow 0.2s;
-            box-shadow: 0 2px 8px rgba(67,233,123,0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.25);
             border: none;
             cursor: pointer;
         }
         .action-btn.edit {
-            background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
-            color: #fff;
+            background: linear-gradient(90deg, #76B5A8 0%, #D9CAB3 100%);
+            color: #2D2A2E;
         }
         .action-btn.edit:hover {
-            background: #219150;
+            background: #C77D57;
+            color: #fff;
         }
         .action-btn.delete {
-            background: #e53935;
+            background: #D75A4A;
             color: #fff;
         }
         .action-btn.delete:hover {
-            background: #b71c1c;
+            background: #B53D30;
         }
         .pagination {
             width: 98%;
@@ -125,16 +127,16 @@
             font-size: 1rem;
             border: none;
             cursor: pointer;
-            background: #f2fbf6;
-            color: #219150;
+            background: #443F45;
+            color: #D9CAB3;
             transition: background 0.2s, color 0.2s;
         }
         .pagination-btn.active {
-            background: #43e97b;
+            background: #76B5A8;
             color: #fff;
         }
         .pagination-btn:hover {
-            background: #219150;
+            background: #C77D57;
             color: #fff;
         }
         @keyframes fadeIn {
